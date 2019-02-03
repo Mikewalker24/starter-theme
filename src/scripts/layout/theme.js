@@ -8,8 +8,11 @@ import 'lazysizes/plugins/respimg/ls.respimg';
 import '../../styles/theme.scss';
 import '../../styles/theme.scss.liquid';
 
-import {focusHash, bindInPageLinks} from '@shopify/theme-a11y';
-import {cookiesEnabled} from '@shopify/theme-cart';
+import { focusHash, bindInPageLinks } from '@shopify/theme-a11y';
+import { cookiesEnabled } from '@shopify/theme-cart';
+
+import $ from 'jquery';
+import 'slick-carousel';
 
 // Common a11y fixes
 focusHash();

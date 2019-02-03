@@ -36,3 +36,10 @@
 // Templates
 @import './templates/gift_card';
 @import './templates/product';
+
+$slick-font-path: "/node_modules/slick-carousel/slick/fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "/node_modules/slick-carousel/slick-carousel/slick/" !default;
+$slick-arrow-color: black !default;
+@import "~slick-carousel/slick/slick";
+@import "~slick-carousel/slick/slick-theme";
