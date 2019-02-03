@@ -25,3 +25,5 @@ if (cookiesEnabled()) {
     'supports-cookies',
   );
 }
+
+$('.slider').slick();
