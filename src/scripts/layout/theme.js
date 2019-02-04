@@ -11,6 +11,9 @@ import '../../styles/theme.scss.liquid';
 import {focusHash, bindInPageLinks} from '@shopify/theme-a11y';
 import {cookiesEnabled} from '@shopify/theme-cart';
 
+import $ from 'jquery';
+import 'slick-carousel';
+
 // Common a11y fixes
 focusHash();
 bindInPageLinks();
@@ -19,7 +22,7 @@ bindInPageLinks();
 if (cookiesEnabled()) {
   document.documentElement.className = document.documentElement.className.replace(
     'supports-no-cookies',
-    'supports-cookies',
+    'supports-cookies'
   );
 }
 
@@ -28,7 +31,7 @@ if (cookiesEnabled()) {
 const $changeQuantity = $('.js-change-quantity');
 
 if ($changeQuantity) {
-  $changeQuantity.on('click', function () {
+  $changeQuantity.on('click', function() {
     const $this = $(this);
     const $input = $(this).siblings('input');
     const val = parseInt($input.val());
@@ -64,3 +67,4 @@ if ($changeQuantity) {
     $input.trigger('change');
     return false;
   });
+}
