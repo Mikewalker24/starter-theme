@@ -68,3 +68,12 @@ if ($changeQuantity) {
     return false;
   });
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const endlessScroll = new Ajaxinate({
+    container: '.product-grid',
+    pagination: '.product-pagination',
+    method: 'click',
+  });
+});
