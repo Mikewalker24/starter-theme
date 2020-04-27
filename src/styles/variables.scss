@@ -22,31 +22,15 @@ $font-body-weight: var(--font-body-weight);
 $font-body-style: var(--font-body-style);
 $font-body-bold-weight: var(--font-body-bold-weight);
 
-$serif: serif;
-$sans-serif: sans-serif;
+$serif: "Constantia", Lucida, Georgia, Garamond, serif;
+$sans-serif: "Segoe UI", "Helvetica Neue", sans-serif;
 
 $font-size-h1: 3.875rem;
 $font-size-h2: 3rem;
 $font-size-h3: 2.5rem;
 $font-size-h4: 2rem;
 $font-size-h5: 1.6rem;
-$font-size-p: 1.6rem;
-
-$light: 300;
-$regular: 500;
-$medium: 600;
-$bold: 700;
-
-$point01: 0.01em;
-$point02: 0.02em;
-$point03: 0.03em;
-$point04: 0.04em;
-$point05: 0.05em;
-$point06: 0.06em;
-$point07: 0.07em;
-$point08: 0.08em;
-$point09: 0.09em;
-$point1: 0.1em;
+$font-size-p: 1.3rem;
 
 // Transitions
 $transition: all 0.3s ease;
@@ -59,26 +43,26 @@ $grid-max-width: 73.75em;
 $grid-gutter: 30px;
 
 // Breakpoints used with the media-query mixin
-$small: 'small';
-$medium: 'medium';
-$medium-down: 'medium-down';
-$medium-up: 'medium-up';
-$large: 'large';
-$large-down: 'large-down';
-$large-up: 'large-up';
-$widescreen: 'widescreen';
-$laptop-lg: 'laptop-lg';
-$laptop-sm: 'laptop-sm';
-$tablet-lg: 'tablet-lg';
-$tablet-sm: 'tablet-sm';
-$mobile-lg: 'mobile-lg';
-$mobile-sm: 'mobile-sm';
+$small: "small";
+$medium: "medium";
+$medium-down: "medium-down";
+$medium-up: "medium-up";
+$large: "large";
+$large-down: "large-down";
+$large-up: "large-up";
+$widescreen: "widescreen";
+$laptop-lg: "laptop-lg";
+$laptop-sm: "laptop-sm";
+$tablet-lg: "tablet-lg";
+$tablet-sm: "tablet-sm";
+$mobile-lg: "mobile-lg";
+$mobile-sm: "mobile-sm";
 
 $breakpoints: (
-  $laptop-lg: '(max-width: 1180px)',
-  $laptop-sm: '(max-width: 1050px)',
-  $tablet-lg: '(max-width: 976px)',
-  $tablet-sm: '(max-width: 768px)',
-  $mobile-lg: '(max-width: 550px)',
-  $mobile-sm: '(max-width: 420px)'
+  $laptop-lg: "(max-width: 1180px)",
+  $laptop-sm: "(max-width: 1050px)",
+  $tablet-lg: "(max-width: 976px)",
+  $tablet-sm: "(max-width: 768px)",
+  $mobile-lg: "(max-width: 550px)",
+  $mobile-sm: "(max-width: 420px)",
 );
