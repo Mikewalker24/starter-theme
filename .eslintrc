@@ -1,7 +1,16 @@
 {
-  "extends": ["plugin:shopify/esnext", "plugin:shopify/jquery"],
+  "extends": ["airbnb", "prettier"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "classes": true
+    }
+  },
   "env": {
-    "jest": true
+    "browser": true,
+    "jquery": true
   },
   "rules": {
     "no-debugger": 0,
@@ -24,6 +33,7 @@
         "props": false
       }
     ],
+    "no-unused-variable": [true, { "ignore-pattern": "^_" }],
     "no-console": 0,
     "import/prefer-default-export": 0,
     "import": 0,
@@ -78,10 +88,8 @@
       }
     ]
   },
+  "plugins": ["prettier"],
   "globals": {
-    "document": true,
-    "window": true,
-    "Shopify": true,
-    "theme": true
+    "WPURLS": true
   }
 }

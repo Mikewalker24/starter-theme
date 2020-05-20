@@ -1,0 +1,88 @@
+{% liquid
+  assign hero_image = section.settings.hero_image
+  assign video_url = section.settings.video_url
+  assign hero_heading = section.settings.hero_heading
+  assign hero_subheading = section.settings.hero_subheading
+  assign hero_product = section.settings.hero_product
+  assign hero_btn_url = section.settings.hero_btn_url
+  assign hero_btn_text = section.settings.hero_btn_text
+%}
+
+{% capture backgroundStyle %}
+  style="background-image: url({{ hero_image | img_url: 'master' }});"
+{% endcapture %}
+
+<section class="s-hero" {% if hero_image != blank and video_url == blank %}{{ backgroundStyle }}{% endif %}>
+
+  {% comment %} {% render 'video-background' with {id: video_url.id} %} {% endcomment %}
+
+  <div class="s-hero__text-container">
+    <h1 class="headline">{{ hero_heading }}</h1>
+    <p class="xl">{{ hero_subheading }}</p>
+    <a class="btn btn-primary btn-primary--yellow" href="{{ hero_btn_url }}">
+      <span>
+        {{ hero_btn_text }}
+      </span>
+    </a>
+  </div>
+
+  <div class="s-hero__product">
+    <img
+    src="{{ hero_product | img_url: 'master' }}">
+  </div>
+
+</section>
+
+{% schema %}
+
+{
+  "name": "Hero (home)",
+  "settings": [
+    {
+      "type": "text",
+      "id": "hero_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "hero_subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "hero_btn_text",
+      "label": "Button text"
+    },
+    {
+      "type": "url",
+      "id": "hero_btn_url",
+      "label": "Button link"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_product",
+      "label": "Product image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero (home)",
+      "category": "Hero"
+    }
+  ]
+}
+
+{% endschema %}
+
+{% comment %} 
+{
+  "id": "video_url",
+  "type": "video_url",
+  "label": "Video URL",
+  "accept": ["youtube", "vimeo"]
+}, {% endcomment %}

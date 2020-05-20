@@ -1,0 +1,18 @@
+.product-preview {
+  img {
+    display: block;
+  }
+
+  &__image {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+  }
+
+  &__caption {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 0 8.5%;
+  }
+}

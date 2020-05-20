@@ -27,20 +27,23 @@
 @import './components/placeholders';
 @import './components/responsive-images';
 @import './components/address-forms';
+@import './components/product-preview';
 
 // Sections
 @import './sections/blog-posts';
 @import './sections/collection-list';
 @import './sections/featured-collection';
 @import './sections/image-with-text';
+@import './sections/hero';
 
 // Templates
 @import './templates/gift_card';
 @import './templates/product';
 
-$slick-font-path: "/node_modules/slick-carousel/slick/fonts/" !default;
-$slick-font-family: "slick" !default;
-$slick-loader-path: "/node_modules/slick-carousel/slick-carousel/slick/" !default;
+$slick-font-path: '/node_modules/slick-carousel/slick/fonts/' !default;
+$slick-font-family: 'slick' !default;
+$slick-loader-path: '/node_modules/slick-carousel/slick-carousel/slick/' !default;
 $slick-arrow-color: black !default;
-@import "~slick-carousel/slick/slick";
-@import "~slick-carousel/slick/slick-theme";
+
+@import '~slick-carousel/slick/slick';
+@import '~slick-carousel/slick/slick-theme';
