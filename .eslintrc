@@ -2,7 +2,7 @@
   "extends": ["airbnb", "prettier"],
   "parser": "babel-eslint",
   "parserOptions": {
-    "ecmaVersion": 8,
+    "ecmaVersion": 2020,
     "ecmaFeatures": {
       "impliedStrict": true,
       "classes": true
@@ -33,7 +33,6 @@
         "props": false
       }
     ],
-    "no-unused-variable": [true, { "ignore-pattern": "^_" }],
     "no-console": 0,
     "import/prefer-default-export": 0,
     "import": 0,
@@ -88,8 +87,5 @@
       }
     ]
   },
-  "plugins": ["prettier"],
-  "globals": {
-    "WPURLS": true
-  }
+  "plugins": ["prettier"]
 }
